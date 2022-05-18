@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
+/* Ruta para establecer la conexion con oracle */
 Route::get('/datos', function () {
     return DB::select('select * from CALIFICACION');
 });
